@@ -1,0 +1,29 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+ 
+int main()
+{
+  vector<int> arr{0,1,0,3,12};
+  int n=arr.size();
+
+  int j=0;
+       for(int i=0;i<n;i++){
+           if(arr[i]!=0){
+               arr[j++]=arr[i];
+           }
+       }
+       
+       for(int k=j;k<n;k++){
+           arr[k]=0;
+       }
+   
+   
+  for(const auto& i : arr)
+    cout << i << ' ';
+ 
+  cout << "\n";
+ 
+  return 0;
+}
